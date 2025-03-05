@@ -111,7 +111,7 @@ gsap.to(box1 , {
         trigger: box1 ,
         start: 'top 80%',
         end: 'top 20%',
-        markers: true,
+        // markers: true,
         toggleActions: 'play reverse restart reverse',
         // 
         onEnter: () => {
