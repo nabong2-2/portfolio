@@ -281,7 +281,7 @@ main .pf_wrap > .swiper-wrapper .wrap3 .contents .web_design_wrap .swiper-wrappe
 main .pf_wrap > .swiper-wrapper .wrap3 .contents .web_design_wrap .swiper-wrapper .swiper-slide .prototype_info .bottom_btn_box a {
     padding: 0 26px; border-radius: 5px;
     line-height: 43px;
-    margin-right: 12px;
+    margin-right: 12px; font-size: 15px;
 }
 main .pf_wrap > .swiper-wrapper .wrap3 .contents .web_design_wrap .swiper-wrapper .swiper-slide .prototype_info .bottom_btn_box .result {
     background-color: #222; color: #fff; 
