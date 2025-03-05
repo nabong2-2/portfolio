@@ -336,7 +336,7 @@ main .pf_wrap .wrap4 .contents .card .swiper-wrapper {
     transition-timing-function: linear;
 }
 main .pf_wrap .wrap4 .contents .card .swiper-slide {cursor: pointer;}
-main .pf_wrap .wrap4 .contents .card .swiper-slide img {width: 100%; height: auto;}
+main .pf_wrap .wrap4 .contents .card .swiper-slide img {width: 100%;}
 main .pf_wrap .wrap4 .contents .right_card {
     max-width: 1215px;
     float: right;   
@@ -385,8 +385,10 @@ main .pf_wrap .wrap5 .contents {
     display: flex; flex-flow: row nowrap; justify-content: center;
     align-items: center;
 }
-main .pf_wrap .wrap5 .contents img {
+main .pf_wrap .wrap5 .contents > a {
     margin-right: 100px;
+}
+main .pf_wrap .wrap5 .contents img {
 }
 main .pf_wrap .wrap5 .contents > span {
     display: flex; flex-flow: column nowrap; 
