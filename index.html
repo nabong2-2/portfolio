@@ -3,524 +3,1185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오</title>
-    <!-- 글꼴 -->
-    <link rel="stylesheet prefetch" href="https://gist.githubusercontent.com/mfd/614e2e80a22b878bde63cb471cbe677e/raw/eef2aabfd0d588d43285431186a0cf70305ceb80/sanfrancisco-font.css">
-    <!-- scrollTrigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>마켓컬리 리디자인</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- css,js -->
-    <link rel="stylesheet" href="./styles/rest.css">
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
     <script src="./script/index.js" defer></script>
 </head>
 <body>
-    <main>
-        <div class="swiper pf_wrap">
-            <div class="swiper-wrapper">
-                <!-- 1. 메인 -->
-                <div class="swiper-slide wrap1">
-                    <div class="contents">
-                        <h1><img src="./images/text_main.png" alt="포트폴리오"></h1>
-                        <div class="info_box">
-                            <p class="years">2025</p>
-                            <p class="introduce_title"><!-- Web design&publisher --></p>
-                        </div>
+    <header>
+        <div class="top_header">
+            <div class="contents">
+                <p class="header_txt_move"></p>
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom_header">
+            <div class="contents">
+                <div class="top">
+                    <h1><a href="#"><img src="./images/logo_suggest.png" alt="로고"></a></h1>
+                    <div class="select_market">
+                        <a href="#">마켓컬리</a>
+                        <img src="./images/maeket_line.png" alt="">
+                        <a href="#">뷰티컬리</a>
                     </div>
                 </div>
-                <!-- 2. profile -->
-                <div class="swiper-slide wrap2">
-                    <!-- 3. 움직이는 글씨 -->
-                    <div class="container move_txt">
-                        <!-- 백그라운드 -->
-                    </div>
-                    <div class="contents">
-                        <!-- 앱솔루트 이미지 -->
-                        <img src="./images/line.png" alt="타이틀 절개 표시" class="ab_line">
-                        <!-- 제목 -->
-                        <div class="title_box">
-                            <div class="ab_list">
-                                <img src="./images/plus_list.png" alt="">
-                                <img src="./images/spot_list.png" alt="">
-                            </div>
-                            <h2>profile</h2>
-                            <div class="right_info_box">
-                                <p>💡 사용자에게 직관적이고 아름다운 웹 경험을 제공하는 퍼블리셔가 되겠습니다!</p>
-                            </div>
-                        </div>
-                        <div class="info_contents">
-                            <!-- 왼쪽 큰 박스 -->
-                            <div class="left_box">
-                                <!-- === 젤 왼쪽 위 -->
-                                <div class="self_img_box">
-                                    <div class="color_box"></div>
-                                    <div class="img"></div>
-                                </div>
-                                <!-- === 젤 왼쪽 가운데 -->
-                                <div class="education_box">
-                                    <p class="title">Education</p>
-                                    <div class="common_box">
-                                        <!-- 1 -->
-                                        <div class="txt">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span> 웹 디자이너& 웹퍼블리셔 국비 강의 수강 ➡️  2025</span>
-                                        </div>
-                                        <!-- 2 -->
-                                        <div class="txt">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>한신대학교 광고홍보학부 졸업 ➡️ 2024.03.02</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- === 젤 왼쪽 아래 -->
-                                <div class="license_box">
-                                    <p class="title">License</p>
-                                    <div class="common_box">
-                                        <!-- 1 -->
-                                        <div class="txt">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>2024 GTQ 포토샵 1급</span>
-                                        </div>
-                                        <!-- 2 -->
-                                        <div class="txt">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>2024 정보처리기사 필기</span>
-                                        </div>
-                                        <!-- 3 -->
-                                        <div class="txt">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>2023 한능검 1급</span>
-                                        </div>
-                                        <!-- 4 -->
-                                        <div class="txt">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>2018 운전면허증 2종</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 가운데 큰 박스 -->
-                            <div class="middle_box">
-                                <!-- 가운데 top -->
-                                <div class="contact_box">
-                                    <p class="title">Contact</p>
-                                    <div class="common_box">
-                                        <!-- 1 -->
-                                        <div class="txt">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>010-6776-9550</span>
-                                        </div>
-                                        <!-- 2 -->
-                                        <div class="txt">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>skrud9550@naver.com</span>
-                                        </div>
-                                        <!-- 3 깃허브 -a -->
-                                        <div class="txt">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span><a href="https://github.com/nabong2-2" target="_blank">https://github.com/nabong2-2</a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 가운데 middle -->
-                                <div class="plus_box">
-                                    <div class="img1"></div>
-                                    <div class="img2"><p>Web design
-                                        publisher</p></div>
-                                    <div class="img3"></div>
-                                </div>
-                                <!-- 가운데 bottom -->
-                                <div class="profile_box">
-                                    <p class="title">Profile</p>
-                                    <div class="common_box">
-                                        <!-- 1 -->
-                                        <div class="txt">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>김나경, 1999.02.19</span>
-                                        </div>
-                                        <!-- 2 -->
-                                        <div class="txt">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>인천광역시 부평구 산곡동</span>
-                                        </div>
-                                        <!-- 3 -->
-                                        <div class="txt">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>꼼꼼하고 긍정적</span>
-                                        </div>
-                                        <!-- 4 -->
-                                        <div class="txt">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>음악 듣기, 게임, 소설</span>
-                                        </div>
-                                        <!-- 5 -->
-                                        <div class="txt">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>초콜릿, 귀여운 굿즈</span>
-                                        </div>
-                                        <!-- 6 -->
-                                        <div class="txt">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>웹 디자인+퍼블리셔</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 오른쪽 큰 박스 -->
-                            <div class="right_box">
-                                <div class="common_box">
-                                    <p class="title">Skill</p>
-                                    <!-- 1 -->
-                                    <div class="txt">
-                                        <div class="left">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>UI/UX</span>
-                                        </div>
-                                        <p class="blue_add_txt">사용자 리서치, 레퍼런스 조사분석가능</p>
-                                    </div>
-                                    <!-- 2 -->
-                                    <div class="txt">
-                                        <div class="left">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>PHOTOSHOP</span>
-                                        </div>
-                                        <p class="blue_add_txt">웹, 배너광고, 상세 디자인 제작 가능</p>
-                                    </div>
-                                    <!-- 3 -->
-                                    <div class="txt">
-                                        <div class="left">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>ILLUSTRATOR</span>
-                                        </div>
-                                        <p class="blue_add_txt">로고, 캐릭터 디자인 제작 가능</p>
-                                    </div>
-                                    <!-- 4 -->
-                                    <div class="txt">
-                                        <div class="left">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>FIGMA</span>
-                                        </div>
-                                        <p class="blue_add_txt">UI/UX 와이어프레임, 프로토타입 설계가능</p>
-                                    </div>
-                                    <!-- 5 -->
-                                    <div class="txt">
-                                        <div class="left">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>NOTION</span>
-                                        </div>
-                                        <p class="blue_add_txt">개인공부 기록&팀원 업무협업가능</p>
-                                    </div>
-                                    <!-- 6 -->
-                                    <div class="txt">
-                                        <div class="left">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>GITHUB</span>
-                                        </div>
-                                        <p class="blue_add_txt">깃허브 코드저장소 활용가능</p>
-                                    </div>
-                                    <!-- 7 -->
-                                    <div class="txt">
-                                        <div class="left">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>HTML 5</span>
-                                        </div>
-                                        <p class="blue_add_txt">웹표준에 맞는 마크업설계가능</p>
-                                    </div>
-                                    <!-- 8 -->
-                                    <div class="txt">
-                                        <div class="left">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>CSS</span>
-                                        </div>
-                                        <p class="blue_add_txt">반응형 웹부터 애니메이션까지 다양한 디자인 가능</p>
-                                    </div>
-                                    <!-- 9 -->
-                                    <div class="txt">
-                                        <div class="left">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>JAVASCRIPT</span>
-                                        </div>
-                                        <p class="blue_add_txt">웹 동적&애니메이션 설계가능</p>
-                                    </div>
-                                    <!-- 10 -->
-                                    <div class="txt">
-                                        <div class="left">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>J-QUERY </span>
-                                        </div>
-                                        <p class="blue_add_txt">간단한 웹 동적기능 가능</p>
-                                    </div>
-                                    <!-- 11 -->
-                                    <div class="txt">
-                                        <div class="left">
-                                            <img src="./images/sq_img.png" alt="">
-                                            <span>PPT/WORD/한글</span>
-                                        </div>
-                                        <p class="blue_add_txt">ppt 제작, 간단한 문서 작성 가능</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 4. design-web-prototype -->
-                <div class="swiper-slide wrap3">
-                    <div class="contents">
-                        <!-- 제목 -->
-                        <div class="title_box">
-                            <h2>Web-design</h2>
-                            <div class="right_info_box">
-                                <img src="./images/line.png" alt="">
-                                <p>저의 디자인을 소개합니다.</p>
-                            </div>
-                        </div>
-                        <!-- ------------------------------------------------ swiper -->
-                        <div class="swiper web_design_wrap">
-                            <div class="swiper-wrapper">
-                                <!-- ============================ 1. 러쉬 -->
-                                <div class="swiper-slide web_box1">
-                                    <div class="prototype_info">
-                                        <!-- 타이틀+정보 -->
-                                        <div class="top_title_box">
-                                            <div class="title_web">
-                                                <p class="num">01</p>
-                                                <p class="title">Re-design<span> 러쉬</span></p>
-                                                <p class="add">기존 사이트의 uxui 개선/ 브랜드 임지 강화</p>
-                                                <p class="line"><!-- css --></p>
-                                            </div>
-                                            <div class="info_web">
-                                                <!-- 사용 프로그램 -->
-                                                <div class="txt_box">
-                                                    <p class="txt_t">사용 프로그램</p>
-                                                    <p class="txt_i">figma, photoshop, HTML5, CSS, Javascript</p>
-                                                </div>
-                                                <!-- 기획 및 버전 관리 -->
-                                                <div class="txt_box">
-                                                    <p class="txt_t">기획 및 버전 관리</p>
-                                                    <p class="txt_i">Github, Notion</p>
-                                                </div>
-                                                <!-- 총 제작 기한 -->
-                                                <div class="txt_box">
-                                                    <p class="txt_t">총 제작 기한</p>
-                                                    <p class="txt_i">2주</p>
-                                                </div>
-                                                <!-- 디자인 기여도 -->
-                                                <div class="txt_box">
-                                                    <p class="txt_t">디자인 기여도</p>
-                                                    <p class="txt_i">100%</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 버튼 -->
-                                        <div class="bottom_btn_box">
-                                            <a href="https://nabong2-2.github.io/lush/" class="result" target="_blank">프로토타입 결과</a>
-                                            <a href="https://www.figma.com/deck/P0QvE5r9bMrgF6WJKb7cQE/%EB%9F%AC%EC%89%AC-%EA%B8%B0%ED%9A%8D%EC%84%9C?node-id=1-100&viewport=-154%2C-157%2C0.73&t=iGNwoRCNVejstjjS-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" class="uiux" target="_blank">UI/UX 기획 보기</a>
-                                            <a href="https://weare.lush.co.kr/" class="origin_site" target="_blank">원본사이트 보기</a>
-                                        </div>
-                                    </div>
-                                    <div class="prototype"><img src="./images/rush_1.png" alt="러쉬 프로토타입"></div>
-                                </div>
-                                <!-- 마켓컬리 -->
-                                <div class="swiper-slide web_box2">
-                                    <div class="prototype"><img src="./images/rush_1.png" alt="러쉬 프로토타입"></div>
-                                    <div class="prototype_info">
-                                        <!-- 타이틀+정보 -->
-                                        <div class="top_title_box">
-                                            <div class="title_web">
-                                                <p class="num">01</p>
-                                                <p class="title">Re-design<span>마켓컬리</span></p>
-                                                <p class="add">기존 사이트의 uxui 개선/ 브랜드 임지 강화</p>
-                                                <p class="line"><!-- css --></p>
-                                            </div>
-                                            <div class="info_web">
-                                                <!-- 사용 프로그램 -->
-                                                <div class="txt_box">
-                                                    <p class="txt_t">사용 프로그램</p>
-                                                    <p class="txt_i">figma, photoshop, HTML5, CSS, Javascript</p>
-                                                </div>
-                                                <!-- 기획 및 버전 관리 -->
-                                                <div class="txt_box">
-                                                    <p class="txt_t">기획 및 버전 관리</p>
-                                                    <p class="txt_i">Github, Notion</p>
-                                                </div>
-                                                <!-- 총 제작 기한 -->
-                                                <div class="txt_box">
-                                                    <p class="txt_t">총 제작 기한</p>
-                                                    <p class="txt_i">2주</p>
-                                                </div>
-                                                <!-- 디자인 기여도 -->
-                                                <div class="txt_box">
-                                                    <p class="txt_t">디자인 기여도</p>
-                                                    <p class="txt_i">100%</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 버튼 -->
-                                        <div class="bottom_btn_box">
-                                            <a href="#" class="result">프로토타입 결과</a>
-                                            <a href="#" class="uiux">UI/UX 기획 보기</a>
-                                            <a href="#" class="origin_site">원본사이트 보기</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 소녀나라 -->
-                                <div class="swiper-slide web_box3">
-                                    <div class="prototype_info">
-                                        <!-- 타이틀+정보 -->
-                                        <div class="top_title_box">
-                                            <div class="title_web">
-                                                <p class="num">01</p>
-                                                <p class="title">Re-design<span>소녀나라</span></p>
-                                                <p class="add">기존 사이트의 uxui 개선/ 브랜드 임지 강화</p>
-                                                <p class="line"><!-- css --></p>
-                                            </div>
-                                            <div class="info_web">
-                                                <!-- 사용 프로그램 -->
-                                                <div class="txt_box">
-                                                    <p class="txt_t">사용 프로그램</p>
-                                                    <p class="txt_i">figma, photoshop, HTML5, CSS, Javascript</p>
-                                                </div>
-                                                <!-- 기획 및 버전 관리 -->
-                                                <div class="txt_box">
-                                                    <p class="txt_t">기획 및 버전 관리</p>
-                                                    <p class="txt_i">Github, Notion</p>
-                                                </div>
-                                                <!-- 총 제작 기한 -->
-                                                <div class="txt_box">
-                                                    <p class="txt_t">총 제작 기한</p>
-                                                    <p class="txt_i">2주</p>
-                                                </div>
-                                                <!-- 디자인 기여도 -->
-                                                <div class="txt_box">
-                                                    <p class="txt_t">디자인 기여도</p>
-                                                    <p class="txt_i">100%</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 버튼 -->
-                                        <div class="bottom_btn_box">
-                                            <a href="#" class="result">프로토타입 결과</a>
-                                            <a href="#" class="uiux">UI/UX 기획 보기</a>
-                                            <a href="#" class="origin_site">원본사이트 보기</a>
-                                        </div>
-                                    </div>
-                                    <div class="prototype"><img src="./images/rush_1.png" alt="러쉬 프로토타입"></div>
-                                </div>
-                                <!-- 롤 궁합 페이지 -->
-                                <div class="swiper-slide web_box4">
-                                    <div class="prototype"><img src="./images/rush_1.png" alt="러쉬 프로토타입"></div>
-                                    <div class="prototype_info">
-                                        <!-- 타이틀+정보 -->
-                                        <div class="top_title_box">
-                                            <div class="title_web">
-                                                <p class="num">01</p>
-                                                <p class="title">Re-design<span>롤 궁합 페이지</span></p>
-                                                <p class="add">기존 사이트의 uxui 개선/ 브랜드 임지 강화</p>
-                                                <p class="line"><!-- css --></p>
-                                            </div>
-                                            <div class="info_web">
-                                                <!-- 사용 프로그램 -->
-                                                <div class="txt_box">
-                                                    <p class="txt_t">사용 프로그램</p>
-                                                    <p class="txt_i">figma, photoshop, HTML5, CSS, Javascript</p>
-                                                </div>
-                                                <!-- 기획 및 버전 관리 -->
-                                                <div class="txt_box">
-                                                    <p class="txt_t">기획 및 버전 관리</p>
-                                                    <p class="txt_i">Github, Notion</p>
-                                                </div>
-                                                <!-- 총 제작 기한 -->
-                                                <div class="txt_box">
-                                                    <p class="txt_t">총 제작 기한</p>
-                                                    <p class="txt_i">2주</p>
-                                                </div>
-                                                <!-- 디자인 기여도 -->
-                                                <div class="txt_box">
-                                                    <p class="txt_t">디자인 기여도</p>
-                                                    <p class="txt_i">100%</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 버튼 -->
-                                        <div class="bottom_btn_box">
-                                            <a href="#" class="result">프로토타입 결과</a>
-                                            <a href="#" class="uiux">UI/UX 기획 보기</a>
-                                            <a href="#" class="origin_site">원본사이트 보기</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- nav -->
-                            <div class="swiper-scrollbar"></div>
-                        </div>
-                    </div> 
-                </div>
-                <!-- 5. design 모음 -->
-                <div class="swiper-slide wrap4">
-                    <div class="contents">
-                        <!-- 제목 -->
-                        <div class="title_box">
-                            <h2>Web-design</h2>
-                            <div class="right_info_box">
-                                <img src="./images/line.png" alt="">
-                                <p>저의 디자인 작품들을 소개합니다!</p>
-                            </div>
-                        </div>
-                        <!-- swiper -->
-                        <!-- 왼쪽 세로형 -->
-                        <div class="swiper card">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide c-box1"><img src="./images/ikea.jpg" alt=""></div>
-                                <div class="swiper-slide c-box2"><img src="./images/amond.jpg" alt=""></div>
-                                <div class="swiper-slide c-box3"><img src="./images/pattern_card2.png" alt=""></div>
-                            </div>
-                        </div>
-                        <!-- 오른쪽 가로형 -->
-                        <div class="right_card">
-                            <!-- 배너 -->
-                            <div class="swiper bnr">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide bnr1"><img src="./images/pattern.png" alt=""></div>
-                                    <div class="swiper-slide bnr2"><img src="./images/pattern.png" alt=""></div>
-                                    <div class="swiper-slide bnr3"><img src="./images/pattern.png" alt=""></div>
-                                    <div class="swiper-slide bnr4"><img src="./images/pattern.png" alt=""></div>
-                                    <div class="swiper-slide bnr4"><img src="./images/pattern.png" alt=""></div>
-                                </div>
-                            </div>
-                            <!-- sns -->
-                            <div class="swiper sns">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide sns1"><img src="./images/sona_pink.jpg" alt=""></div>
-                                    <div class="swiper-slide sns2"><img src="./images/soan_green.jpg" alt=""></div>
-                                    <div class="swiper-slide sns3"><img src="./images/pattern_sns.png" alt=""></div>
-                                    <div class="swiper-slide sns4"><img src="./images/pattern_sns.png" alt=""></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 6. 마무리 소개 -->
-                <div class="swiper-slide wrap5">
-                    <div class="contents">
-                        <a href="#"><img src="./images/bacode1.png" alt=""></a>
-                        <span>
-                            <em>Thank You For Watching</em>
-                            <span class="ambition">더 발전하는 퍼블리셔&디자이너가 되겠습니다.</span>
-                        </span>
+                <div class="bottom">
+                    <nav>
+                        <img src="./images/hambuger.png" alt="">
+                        <a href="#">신선제품</a>
+                        <a href="#" class="star_delivery"><img src="./images/deliver.png" alt="배달 이모티콘">샛별배송</a>
+                        <a href="#">알뜰쇼핑</a>
+                        <a href="#">베스트</a>
+                        <a href="#">신상품</a>
+                        <a href="#">맞춤쇼핑</a>
+                    </nav>
+                    <div class="customer_service">
+                        <form action="#">
+                            <input type="text" placeholder="어떤제품을 찾으시나요?">
+                            <button><img src="./images/search.png" alt=""></button>
+                        </form>
+                        <a href="#"><img src="./images/heart.png" alt=""></a>
+                        <a href="#"><img src="./images/cart.png" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- 디자인 팝업 -->
-        <div class="popup_bg">
-            <div class="scroll_wrap">
-                <img src="./images/pattern.png" alt="팝업 이미지">
+    </header>
+    <main>
+        <!-- 1. main 배너 -->
+        <div class="swiper main_bnr">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bnr1"><img src="./images/main1.jpg" alt=""></div>
+                <div class="swiper-slide bnr2"><img src="./images/main2.jpg" alt=""></div>
+                <div class="swiper-slide bnr3"><img src="./images/main3.jpg" alt=""></div>
+                <div class="swiper-slide bnr3"><img src="./images/main2.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"><img src="./images/bnr_btn.png" alt=""></div>
+            <div class="swiper-button-prev"><img src="./images/bnr_btn.png" alt=""></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- 2. 실시간 인기 상품 -->
+        <div class="container popular_product_wrap">
+            <div class="contents">
+                <div class="sub_title">
+                    <a href="#">
+                        <span class="category_title">실시간 인기 상품</span>
+                        <img src="./images/title_arrow.png" alt="더보기">
+                    </a>
+                </div>
+                <div class="menu_list">
+                    <a href="#" class="menu_item_bold">간펀식</a>
+                    <a href="#">간식</a>
+                    <a href="#">유제품</a>
+                    <a href="#">베이커리</a>
+                    <a href="#">건강식품</a>
+                </div>
+                <!-- 스와이퍼 / 슬라이드 1개씩 넘어가게 하기? 부모에 overflow hidden -->
+                <div class="swiper items_wrap">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide item1">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item2">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item3">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item4">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item5">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item6">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item7">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item8">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item9">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item10">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 바깥쪽 - 부모 contents -->
+                    <div class="swiper-button-next"><img src="./images/arrow.png" alt=""></div>
+                    <div class="swiper-button-prev"><img src="./images/arrow.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <!-- 3. 중간 배너 (샛별배송) -->
+        <div class="container middle_bnr">
+            <div class="contents">
+                <a href="#"><img src="./images/middle_bnr_saetbyeol.jpg" alt=""></a>
+                <div class="satbyeol_info">
+                    <div class="left">
+                        <span class="title">샛별&하루배송</span>
+                        <span class="promotion">샛별이 뜰 때가 가장 신선할 때 신선제품을 샛별처럼 배송해 드려요!</span>
+                    </div>
+                    <a href="#" class="the_more_box">더 자세히 보기</a>
+                </div>
+            </div>
+        </div>
+        <!-- 4. 새로 들어온 신제품  -->
+        <div class="container new_product_wrap">
+            <div class="contents">
+                <div class="sub_title">
+                    <a href="#">
+                        <span class="category_title">새로 들어온 신제품</span>
+                        <img src="./images/title_arrow.png" alt="더보기">
+                    </a>
+                </div>
+                <p class="add_title">따끈따근한 제품이 출시되었어요!</p>
+                <!-- 스와이퍼 / 슬라이드 1개씩 넘어가게 하기? 부모에 overflow hidden -->
+                <div class="swiper items_wrap">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide item1">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item2">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item3">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item4">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item5">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item6">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item7">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item8">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item9">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide item10">
+                            <a href="#">
+                                <div class="item_img"><!-- 백그라운드2개 --></div>
+                                <div class="item_info">
+                                    <div class="top_info">
+                                        <p class="company">사리원</p>
+                                        <p class="name">소불고기전골</p>
+                                        <div class="price_wrap">
+                                            <span class="origin_p">15,000원</span>
+                                            <span class="slae_p">11,900원</span>
+                                            <span class="rate">25%</span>
+                                        </div>
+                                    </div>
+                                    <div class="bottom_info">
+                                        <div class="review">
+                                            <img src="./images/review.png" alt="리뷰 이모티콘">
+                                            <span class="review_num">999+</span>
+                                        </div>
+                                        <div class="coupons">
+                                            <span>5천원 쿠폰</span>
+                                            <span>10% 쿠폰</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 바깥쪽 - 부모 contents -->
+                    <div class="swiper-button-next"><img src="./images/arrow.png" alt=""></div>
+                    <div class="swiper-button-prev"><img src="./images/arrow.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <!-- 5. 일일특가 -->
+        <div class="container daily_price_wrap">
+            <div class="contents">
+                <!-- 메뉴 리스트 -->
+                <div class="menu_list">
+                    <a href="#" class="menu_item_bold">간편식</a>
+                    <a href="#">간식</a>
+                    <a href="#">유제품</a>
+                    <a href="#">베이커리</a>
+                    <a href="#">건강식품</a>
+                </div>
+                <!-- 밑에 컨텐츠 -->
+                <div class="bottom_contents">
+                    <div class="right_box">
+                        <div class="t_txt_box">
+                            <p class="title">반짝 일일 특가</p>
+                            <p class="plus_contents">하루만 할인하는 컬리 특가</p>
+                            <div class="remain_time">
+                                <img src="./images/" alt="">
+                                <span class="time">00:00:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left_box">
+                        <!-- swiper -->
+                        <div class="swiper daily_time_wrap">
+                            <div class="swiper-wrapper">
+                                <!-- item_a -1 -->
+                                <div class="swiper-slide item_a">
+                                    <a href="#">
+                                        <div class="item_img"><!-- 백그라운드2개 --></div>
+                                        <div class="item_info">
+                                            <div class="top_info">
+                                                <p class="company">사리원</p>
+                                                <p class="name">소불고기전골</p>
+                                            </div>
+                                            <div class="bottom_info">
+                                                <div class="price_wrap">
+                                                    <span class="origin_p">15,000원</span>
+                                                    <span class="sale_p">11,900원</span>
+                                                    <span class="rate">25%</span>
+                                                </div>
+                                                <div class="review">
+                                                    <img src="./images/review.png" alt="리뷰 이모티콘">
+                                                    <span class="review_num">999+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- item_b -2 -->
+                                <div class="swiper-slide item_b">
+                                    <a href="#">
+                                        <div class="item_img"><!-- 백그라운드2개 --></div>
+                                        <div class="item_info">
+                                            <div class="top_info">
+                                                <p class="company">사리원</p>
+                                                <p class="name">소불고기전골</p>
+                                            </div>
+                                            <div class="bottom_info">
+                                                <div class="price_wrap">
+                                                    <span class="origin_p">15,000원</span>
+                                                    <span class="sale_p">11,900원</span>
+                                                    <span class="rate">25%</span>
+                                                </div>
+                                                <div class="review">
+                                                    <img src="./images/review.png" alt="리뷰 이모티콘">
+                                                    <span class="review_num">999+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- item_c -3 -->
+                                <div class="swiper-slide item_c">
+                                    <a href="#">
+                                        <div class="item_img"><!-- 백그라운드2개 --></div>
+                                        <div class="item_info">
+                                            <div class="top_info">
+                                                <p class="company">사리원</p>
+                                                <p class="name">소불고기전골</p>
+                                            </div>
+                                            <div class="bottom_info">
+                                                <div class="price_wrap">
+                                                    <span class="origin_p">15,000원</span>
+                                                    <span class="sale_p">11,900원</span>
+                                                    <span class="rate">25%</span>
+                                                </div>
+                                                <div class="review">
+                                                    <img src="./images/review.png" alt="리뷰 이모티콘">
+                                                    <span class="review_num">999+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- item_d -4 -->
+                                <div class="swiper-slide item_d">
+                                    <a href="#">
+                                        <div class="item_img"><!-- 백그라운드2개 --></div>
+                                        <div class="item_info">
+                                            <div class="top_info">
+                                                <p class="company">사리원</p>
+                                                <p class="name">소불고기전골</p>
+                                            </div>
+                                            <div class="bottom_info">
+                                                <div class="price_wrap">
+                                                    <span class="origin_p">15,000원</span>
+                                                    <span class="sale_p">11,900원</span>
+                                                    <span class="rate">25%</span>
+                                                </div>
+                                                <div class="review">
+                                                    <img src="./images/review.png" alt="리뷰 이모티콘">
+                                                    <span class="review_num">999+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- item_e -5 -->
+                                <div class="swiper-slide item_e">
+                                    <a href="#">
+                                        <div class="item_img"><!-- 백그라운드2개 --></div>
+                                        <div class="item_info">
+                                            <div class="top_info">
+                                                <p class="company">사리원</p>
+                                                <p class="name">소불고기전골</p>
+                                            </div>
+                                            <div class="bottom_info">
+                                                <div class="price_wrap">
+                                                    <span class="origin_p">15,000원</span>
+                                                    <span class="sale_p">11,900원</span>
+                                                    <span class="rate">25%</span>
+                                                </div>
+                                                <div class="review">
+                                                    <img src="./images/review.png" alt="리뷰 이모티콘">
+                                                    <span class="review_num">999+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- item_f -6 -->
+                                <div class="swiper-slide item_f">
+                                    <a href="#">
+                                        <div class="item_img"><!-- 백그라운드2개 --></div>
+                                        <div class="item_info">
+                                            <div class="top_info">
+                                                <p class="company">사리원</p>
+                                                <p class="name">소불고기전골</p>
+                                            </div>
+                                            <div class="bottom_info">
+                                                <div class="price_wrap">
+                                                    <span class="origin_p">15,000원</span>
+                                                    <span class="sale_p">11,900원</span>
+                                                    <span class="rate">25%</span>
+                                                </div>
+                                                <div class="review">
+                                                    <img src="./images/review.png" alt="리뷰 이모티콘">
+                                                    <span class="review_num">999+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- item_g -7 -->
+                                <div class="swiper-slide item_g">
+                                    <a href="#">
+                                        <div class="item_img"><!-- 백그라운드2개 --></div>
+                                        <div class="item_info">
+                                            <div class="top_info">
+                                                <p class="company">사리원</p>
+                                                <p class="name">소불고기전골</p>
+                                            </div>
+                                            <div class="bottom_info">
+                                                <div class="price_wrap">
+                                                    <span class="origin_p">15,000원</span>
+                                                    <span class="sale_p">11,900원</span>
+                                                    <span class="rate">25%</span>
+                                                </div>
+                                                <div class="review">
+                                                    <img src="./images/review.png" alt="리뷰 이모티콘">
+                                                    <span class="review_num">999+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- item_h -8 -->
+                                <div class="swiper-slide item_h">
+                                    <a href="#">
+                                        <div class="item_img"><!-- 백그라운드2개 --></div>
+                                        <div class="item_info">
+                                            <div class="top_info">
+                                                <p class="company">사리원</p>
+                                                <p class="name">소불고기전골</p>
+                                            </div>
+                                            <div class="bottom_info">
+                                                <div class="price_wrap">
+                                                    <span class="origin_p">15,000원</span>
+                                                    <span class="sale_p">11,900원</span>
+                                                    <span class="rate">25%</span>
+                                                </div>
+                                                <div class="review">
+                                                    <img src="./images/review.png" alt="리뷰 이모티콘">
+                                                    <span class="review_num">999+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 6. 미들 배너 -->
+        <div class="container middle_bnr_full">
+            <img src="./images/Artboard 1.png" alt="">
+            <img src="./images/Artboard 2.jpg" alt="">
+        </div>
+        <!-- 7. 취향 저격 제품 -->
+        <div class="container shot_product_wrap">
+            <!-- 1600w -->
+            <div class="contents">
+                <div class="sub_title">
+                    <a href="#">
+                        <span class="category_title">MD가 추천하는 취향 저격 컬리템! </span>
+                        <img src="./images/title_arrow.png" alt="더보기">
+                    </a>
+                </div>
+                <div class="menu_list">
+                    <a href="#" class="menu_item_bold">짬뽕</a>
+                    <a href="#">마라탕</a>
+                    <a href="#">돼지갈비</a>
+                    <a href="#">짜장면</a>
+                    <a href="#">낙곱새</a>
+                </div>
+                <!-- swiper -->
+                <div class="swiper shot_items_box">
+                    <div class="swiper-wrapper">
+                        <!-- 1 -->
+                        <div class="swiper-slide item_1">
+                            <div class="img_first"></div>
+                            <!-- 두번째 설명글  -->
+                            <div class="info">
+                                <div class="info_contents">
+                                    <div class="top">
+                                        <div class="title_price">
+                                            <p class="brand">이연복의 목란</p>
+                                            <div class="plus_price">
+                                                <span class="title">짬뽕 2종</span>
+                                                <span class="price">27,000 <em>원</em></span>
+                                            </div>
+                                        </div>
+                                        <div class="wish_box">
+                                            <a href="#"><img src="./images/heart_bg.png" alt="찜"></a>
+                                            <a href="#"><img src="./images/cart_bg.png" alt="장바구니"></a>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="main_info">
+                                            <p class="num">01</p>
+                                            <p class="main_txt">입맛에 맞게 고르는 인기 메뉴</p>
+                                        </div>
+                                        <p class="plus_info">컬리에서 큰 사랑을 받고 있는 목란의 짬뽕,<br>국물이 얼큰한 오리지널 누구나 부담없이 즐길 수 있 마일드까지 두가지가 준비되어있습니다!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img_second"></div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="swiper-slide item_2">
+                            <div class="img_first"></div>
+                            <div class="info">
+                                <div class="info_contents">
+                                    <div class="top">
+                                        <div class="title_price">
+                                            <p class="brand">이연복의 목란</p>
+                                            <div class="plus_price">
+                                                <span class="title">짬뽕 2종</span>
+                                                <span class="price">27,000 <em>원</em></span>
+                                            </div>
+                                        </div>
+                                        <div class="wish_box">
+                                            <a href="#"><img src="./images/heart_bg.png" alt="찜"></a>
+                                            <a href="#"><img src="./images/cart_bg.png" alt="장바구니"></a>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="main_info">
+                                            <p class="num">01</p>
+                                            <p class="main_txt">입맛에 맞게 고르는 인기 메뉴</p>
+                                        </div>
+                                        <p class="plus_info">컬리에서 큰 사랑을 받고 있는 목란의 짬뽕,<br>국물이 얼큰한 오리지널 누구나 부담없이 즐길 수 있 마일드까지 두가지가 준비되어있습니다!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img_second"></div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="swiper-slide item_3">
+                            <div class="img_first"></div>
+                            <div class="info">
+                                <div class="info_contents">
+                                    <div class="top">
+                                        <div class="title_price">
+                                            <p class="brand">이연복의 목란</p>
+                                            <div class="plus_price">
+                                                <span class="title">짬뽕 2종</span>
+                                                <span class="price">27,000 <em>원</em></span>
+                                            </div>
+                                        </div>
+                                        <div class="wish_box">
+                                            <a href="#"><img src="./images/heart_bg.png" alt="찜"></a>
+                                            <a href="#"><img src="./images/cart_bg.png" alt="장바구니"></a>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="main_info">
+                                            <p class="num">01</p>
+                                            <p class="main_txt">입맛에 맞게 고르는 인기 메뉴</p>
+                                        </div>
+                                        <p class="plus_info">컬리에서 큰 사랑을 받고 있는 목란의 짬뽕,<br>국물이 얼큰한 오리지널 누구나 부담없이 즐길 수 있 마일드까지 두가지가 준비되어있습니다!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img_second"></div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="swiper-slide item_4">
+                            <div class="img_first"></div>
+                            <div class="info">
+                                <div class="info_contents">
+                                    <div class="top">
+                                        <div class="title_price">
+                                            <p class="brand">이연복의 목란</p>
+                                            <div class="plus_price">
+                                                <span class="title">짬뽕 2종</span>
+                                                <span class="price">27,000 <em>원</em></span>
+                                            </div>
+                                        </div>
+                                        <div class="wish_box">
+                                            <a href="#"><img src="./images/heart_bg.png" alt="찜"></a>
+                                            <a href="#"><img src="./images/cart_bg.png" alt="장바구니"></a>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="main_info">
+                                            <p class="num">01</p>
+                                            <p class="main_txt">입맛에 맞게 고르는 인기 메뉴</p>
+                                        </div>
+                                        <p class="plus_info">컬리에서 큰 사랑을 받고 있는 목란의 짬뽕,<br>국물이 얼큰한 오리지널 누구나 부담없이 즐길 수 있 마일드까지 두가지가 준비되어있습니다!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img_second"></div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="swiper-slide item_5">
+                            <div class="img_first"></div>
+                            <div class="info">
+                                <div class="info_contents">
+                                    <div class="top">
+                                        <div class="title_price">
+                                            <p class="brand">이연복의 목란</p>
+                                            <div class="plus_price">
+                                                <span class="title">짬뽕 2종</span>
+                                                <span class="price">27,000 <em>원</em></span>
+                                            </div>
+                                        </div>
+                                        <div class="wish_box">
+                                            <a href="#"><img src="./images/heart_bg.png" alt="찜"></a>
+                                            <a href="#"><img src="./images/cart_bg.png" alt="장바구니"></a>
+                                        </div>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="main_info">
+                                            <p class="num">01</p>
+                                            <p class="main_txt">입맛에 맞게 고르는 인기 메뉴</p>
+                                        </div>
+                                        <p class="plus_info">컬리에서 큰 사랑을 받고 있는 목란의 짬뽕,<br>국물이 얼큰한 오리지널 누구나 부담없이 즐길 수 있 마일드까지 두가지가 준비되어있습니다!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img_second"></div>
+                        </div>
+                    </div>
+                    <!-- nav 넣기 -->
+                </div>
+            </div>
+        </div>
+        <!-- 8. 이 상품 어때요 / 얜 swiper XX -->
+        <div class="container rcm_peoduct_wrap">
+            <div class="contents">
+                <div class="box box1">
+                    <div class="rcm_info_txt">
+                        <p class="qa">이 상품 어때요?</p>
+                        <p class="plus_info_txt">당신에게 맞는 컬리 상품을 소개합니다</p>
+                    </div>
+                    <!-- absolute -->
+                    <div class="btn">
+                        <a href="#" class="prev_btn"><img src="./images/bnr_btn.png" alt=""></a>
+                        <a href="#" class="next_btn"><img src="./images/bnr_btn.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="box box2"></div>
+                <div class="box box3"></div>
+                <div class="box box4"></div>
+                <div class="box box5"></div>
+                <div class="box box6"></div>
+                <div class="box big_box">
+                    <div class="img_k"><img src="./images/logo_suggest.png" alt=""></div>
+                    <p class="title_k">AI 알고리즘으로 맞춤 상품을 제공해 드려요</p>
+                    <div class="title_info">
+                        <span>내 취향에 딱 맞는 컬리표 상품</span>
+                        <span><img src="./images/suggest_plus.png" alt=""></span>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="top_footer">
+            <div class="contents">
+                <a href="#">컬리소개</a>
+                <img src="./images/footer_arrow.png" alt="">
+                <a href="#">컬리소개영상</a>
+                <img src="./images/footer_arrow.png" alt="">
+                <a href="#">투자정보</a>
+                <img src="./images/footer_arrow.png" alt="">
+                <a href="#">이용약관</a>
+                <img src="./images/footer_arrow.png" alt="">
+                <a href="#">개인정보처리방침</a>
+                <img src="./images/footer_arrow.png" alt="">
+                <a href="#">이용안내</a>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="container_footer">
+                <!-- 왼쪽 -->
+                <div class="details_container">
+                    <!-- 위 -->
+                    <div class="num_wrap">
+                        <!-- 번호 -->
+                        <div class="num_top">
+                            <p class="num">1644-1107</p>
+                            <!-- 버튼 박스 -->
+                            <span class="talk_box">
+                                <a href="#" class="qna">
+                                    자주묻는질문
+                                    <img src="./images/footer_arrow_talk.png" alt="">
+                                </a>
+                                <a href="#" class="talk">
+                                    1:1 문의 톡
+                                    <img src="./images/footer_arrow_talk.png" alt="">
+                                </a>
+                            </span>
+                        </div>
+                        <p class="time">월~토요일 오전 7시 - 오후 6시</p>
+                    </div>
+                    <!-- 아래 -->
+                    <div class="info_wrap">
+                        <span class="box">
+                            <span>법인명 (상호) : 주식회사</span>
+                            <span>컬리 대표이사 : 김슬아</span>
+                        </span>
+                        <span class="box">
+                            <span>사업자등록번호 : 261-81-23567 <a href="#">[사업자정보 확인]</a> </span>
+                            <span>통신판매업 : 제 2018-서울강남-01646 호</span>
+                        </span>
+                        <span class="box">
+                            <span>주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동)</span>
+                            <span>팩스: 070 - 7500 - 6098</span>
+                        </span>
+                        <span>채용문의 : recruit@kurlycorp.com</span>
+                    </div>
+                </div>
+                <!-- 오른쪽 -->
+                <div class="sns_container">
+                    <span class="sns_txt">KURLY.COM</span>
+                    <span class="sns_box">
+                        <a href="#"><img src="/images/instagram.png" alt=""></a>
+                        <a href="#"><img src="/images/naver.png" alt=""></a>
+                        <a href="#"><img src="/images/youtube.png" alt=""></a>
+                        <a href="#"><img src="/images/blog.png" alt=""></a>
+                        <a href="#"><img src="/images/facebook.png" alt=""></a>
+                    </span>
+                </div>
+            </div>
+            <div class="plus_footer">
+                <!-- 1 -->
+                <div class="footer_box">
+                    <img src="./images/footer_1_img.png" alt="">
+                    <span class="txt_box">
+                        <span>[인증범위] 컬리 쇼핑몰 서비스 개발/운영</span>
+                        <span>(심사받지 않은 물리적 인프라 제외)</span>
+                        <span>[유효기간] 2022.01.19 - 2025.01.18</span>
+                    </span>
+                </div>
+                <!-- ★★ 라인 -->
+                <div class="line"><img src="./images/footer_line_bottom.png" alt=""></div>
+                <!-- 2 -->
+                <div class="footer_box">
+                    <img src="./images/footer_2_img.png" alt="">
+                    <span class="txt_box">
+                        <span>개인정보보호 우수 웹사이트</span>
+                        <span>개인정보처리시스템 인증 (ePRIVACY PLUS)</span>
+                    </span>
+                </div>
+                <!-- ★★ 라인 -->
+                <div class="line"><img src="./images/footer_line_bottom.png" alt=""></div>
+                <!-- 3 -->
+                <div class="footer_box">
+                    <img src="./images/footer_3_img.png" alt="">
+                    <span class="txt_box">
+                        <span>토스페이먼츠 구매안전(에스크로) <br>
+                            서비스를 이용하실 수 있습니다.</span>
+                    </span>
+                </div>
+                <!-- ★★ 라인 -->
+                <div class="line"><img src="./images/footer_line_bottom.png" alt=""></div>
+                <!-- 4 -->
+                <div class="footer_box">
+                    <img src="./images/footer_4_img.png" alt="">
+                    <span class="txt_box">
+                        <span>우리은행과 채무지급보증 계약을 체결하여 <br>
+                            안전거래를 보장하고 있습니다.</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
