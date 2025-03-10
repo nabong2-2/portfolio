@@ -47,6 +47,60 @@ const snsSwiper = new Swiper('.sns', {
     loop: true,
 })
 
+//팝업 출력과 숨기기
+const popup_bg = document.querySelector('.popup_bg');
+const card = document.querySelectorAll('.card img');
+const bnr = document.querySelectorAll('.bnr img');
+const sns = document.querySelectorAll('.sns img');
+
+popup_bg.style.display ='none';
+for(let i of card){
+    //i라는 변수가 이미지로
+    i.addEventListener('click',()=>{
+        popup_bg.style.display = 'block';
+        console.log(i.src)
+        console.log(popup_bg.children[0].children[0].src);
+        popup_bg.children[0].children[0].src = i.src;
+        popup_bg.children[0].style.width = '600px';
+        popup_bg.children[0].style.overflow = 'auto';
+        popup_bg.children[0].style.marginTop = '100px';
+    })
+}       
+for(let i of bnr){
+    //i라는 변수가 이미지로
+    i.addEventListener('click',()=>{
+        popup_bg.style.display = 'block';
+        console.log(i.src)
+        console.log(popup_bg.children[0].children[0].src);
+        popup_bg.children[0].children[0].src = i.src;
+        popup_bg.children[0].style.width = '550px';
+        popup_bg.children[0].style.marginTop = '150px';
+    })
+}       
+for(let i of sns){
+    //i라는 변수가 이미지로
+    i.addEventListener('click',()=>{
+        popup_bg.style.display = 'block';
+        console.log(i.src)
+        console.log(popup_bg.children[0].children[0].src);
+        popup_bg.children[0].children[0].src = i.src;
+        popup_bg.children[0].style.width = '900px';
+        popup_bg.children[0].style.marginTop = '300px';
+    })
+}       
+// bnr 다시 클릭하면 사라지기(한개)
+popup_bg.addEventListener('click', ()=>{
+    popup_bg.style.display ='none';
+})
+
+
+
+
+
+
+
+
+
 //메인 Web design&publisher 한글자씩 타자 무한으로 쳐지게 하기(커서도 깜빡)
 
 const introduceTxt = document.querySelector('.introduce_title');

@@ -274,6 +274,10 @@ main .pf_wrap > .swiper-wrapper .wrap3 .contents .web_design_wrap .swiper-wrappe
 main .pf_wrap > .swiper-wrapper .wrap3 .contents .web_design_wrap .swiper-wrapper .swiper-slide .prototype_info .top_title_box .info_web .txt_box .txt_i {
     font-weight: 300; font-size: 15px;
 }
+main .pf_wrap > .swiper-wrapper .wrap3 .contents .web_design_wrap .swiper-wrapper .swiper-slide .prototype {
+    width: 558px; height: 492px;
+}
+main .pf_wrap > .swiper-wrapper .wrap3 .contents .web_design_wrap .swiper-wrapper .swiper-slide .prototype img {width: 100%;}
 /* 버튼 모음(프로토타입/ uiux/ 원본사이트보기) */
 main .pf_wrap > .swiper-wrapper .wrap3 .contents .web_design_wrap .swiper-wrapper .swiper-slide .prototype_info .bottom_btn_box {
     display: flex; flex-flow: row nowrap; align-items: center;
@@ -357,4 +361,47 @@ main .pf_wrap .wrap4 .contents .right_card .bnr .swiper-slide img {
 main .pf_wrap .wrap4 .contents .right_card .sns {
     height: 161px; width: 100%; 
 }
-main .pf
+main .pf_wrap .wrap4 .contents .right_card .sns .swiper-wrapper {
+    transition-timing-function: linear;
+}
+main .pf_wrap .wrap4 .contents .right_card .sns .swiper-wrapper .swiper-slide {cursor: pointer;}
+main .pf_wrap .wrap4 .contents .right_card .sns .swiper-wrapper .swiper-slide img {
+    width: 100%;
+}
+main .pf_wrap .wrap4 .contents .right_card .sns .swiper-wrapper .sns1 {}
+main .pf_wrap .wrap4 .contents .right_card .sns .swiper-wrapper .sns2 {}
+main .pf_wrap .wrap4 .contents .right_card .sns .swiper-wrapper .sns3 {}
+main .pf_wrap .wrap4 .contents .right_card .sns .swiper-wrapper .sns4 {}
+/* 팝업 */
+.popup_bg {
+    position: fixed; top: 0; left: 0;
+    width: 100%; height: 100vh;
+    background: rgba(0, 0, 0, 0.5); z-index: 999;
+}
+.popup_bg .scroll_wrap {
+    /* 자바스크립트- 가로크기/마진탑 변경 */
+    height: 80vh; width: 700px; margin: 100px auto 0; overflow: auto;
+}
+.popup_bg .scroll_wrap img {width: 100%;}
+/* 마무리 소개 */
+main .wrap5 {
+    width: 100%; padding-top: 300px;
+}
+main .wrap5 .contents {
+    width: 1600px; margin: 0 auto; text-align: center;
+}
+main .wrap5 .contents > a {
+    display: block;
+}
+main .wrap5 .contents > a img {}
+main .wrap5 .contents > span {
+    display: flex; flex-flow: column nowrap;
+}
+main .wrap5 .contents > span em {
+    margin: 40px 0 30px;
+    font-size: 2.5rem; font-weight: 700;
+}
+main .wrap5 .contents > span em .ambition {
+    font-size: 1.25rem; font-weight: 600;
+
+}
