@@ -19,4 +19,4 @@ input[type=number]::-webkit-inner-spin-button {
 fieldset {border:0;}
 legend {display:none;}
 select, option {appearance:none; border:0; outline:none;} 
-table,
+table, tr, td, th {padding: 0; margin: 0; border-collapse: collapse;/* 이중선제거 */}

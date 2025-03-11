@@ -361,47 +361,67 @@ main .pf_wrap .wrap4 .contents .right_card .bnr .swiper-slide img {
 main .pf_wrap .wrap4 .contents .right_card .sns {
     height: 161px; width: 100%; 
 }
-main .pf_wrap .wrap4 .contents .right_card .sns .swiper-wrapper {
-    transition-timing-function: linear;
+main .pf_wrap .wrap4 .contents .right_card .sns .swiper-wrapper {transition-timing-function: linear;}
+main .pf_wrap .wrap4 .contents .right_card .sns .swiper-slide {cursor: pointer;}
+main .pf_wrap .wrap4 .contents .right_card .sns img {
+    width: 100%; 
 }
-main .pf_wrap .wrap4 .contents .right_card .sns .swiper-wrapper .swiper-slide {cursor: pointer;}
-main .pf_wrap .wrap4 .contents .right_card .sns .swiper-wrapper .swiper-slide img {
-    width: 100%;
-}
-main .pf_wrap .wrap4 .contents .right_card .sns .swiper-wrapper .sns1 {}
-main .pf_wrap .wrap4 .contents .right_card .sns .swiper-wrapper .sns2 {}
-main .pf_wrap .wrap4 .contents .right_card .sns .swiper-wrapper .sns3 {}
-main .pf_wrap .wrap4 .contents .right_card .sns .swiper-wrapper .sns4 {}
 /* 팝업 */
-.popup_bg {
+main .popup_bg {
     position: fixed; top: 0; left: 0;
     width: 100%; height: 100vh;
     background: rgba(0, 0, 0, 0.5); z-index: 999;
 }
-.popup_bg .scroll_wrap {
+main .popup_bg .scroll_wrap {
     /* 자바스크립트- 가로크기/마진탑 변경 */
     height: 80vh; width: 700px; margin: 100px auto 0; overflow: auto;
 }
-.popup_bg .scroll_wrap img {width: 100%;}
-/* 마무리 소개 */
-main .wrap5 {
-    width: 100%; padding-top: 300px;
-}
-main .wrap5 .contents {
-    width: 1600px; margin: 0 auto; text-align: center;
-}
-main .wrap5 .contents > a {
-    display: block;
-}
-main .wrap5 .contents > a img {}
-main .wrap5 .contents > span {
-    display: flex; flex-flow: column nowrap;
-}
-main .wrap5 .contents > span em {
-    margin: 40px 0 30px;
-    font-size: 2.5rem; font-weight: 700;
-}
-main .wrap5 .contents > span em .ambition {
-    font-size: 1.25rem; font-weight: 600;
+main .popup_bg .scroll_wrap img {width: 100%;}
+/* swiper */
 
+
+/* 6. 마무리 소개 */
+main .pf_wrap .wrap5 {
+    padding: 400px 0;
+}
+main .pf_wrap .wrap5 .contents {
+    max-width: 1600px; margin: 0 auto;
+    display: flex; flex-flow: row nowrap; justify-content: center;
+    align-items: center;
+}
+main .pf_wrap .wrap5 .contents > a {
+    margin-right: 100px;
+}
+main .pf_wrap .wrap5 .contents img {
+}
+main .pf_wrap .wrap5 .contents > span {
+    display: flex; flex-flow: column nowrap; 
+}
+main .pf_wrap .wrap5 .contents > span em {
+    margin-bottom: 60px;
+    font-size: 32px; font-weight: 700;
+}
+main .pf_wrap .wrap5 .contents > span .ambition {
+    font-size: 18px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 키프레임 */
+@keyframes main_txt {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
