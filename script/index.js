@@ -164,7 +164,7 @@ const sns = document.querySelectorAll('.sns img');
 console.log(popup_bg, bnr, sns);
 
 popup_bg.style.display ='none';
-// ================================== 1
+// ================================== 2
 for(let i of bnr){
     //i라는 변수가 이미지로
     i.addEventListener('click',()=>{
@@ -172,8 +172,8 @@ for(let i of bnr){
         console.log(i.src)
         console.log(popup_bg.children[0].children[0].src);
         popup_bg.children[0].children[0].src = i.src;
-        popup_bg.children[0].style.width = '370px';
-        popup_bg.children[0].style.marginTop = '200px';
+        popup_bg.children[0].style.width = '600px';
+        popup_bg.children[0].style.marginTop = '120px';
     })
 }       
 // bnr 다시 클릭하면 사라지기(한개)
@@ -181,7 +181,7 @@ popup_bg.addEventListener('click', ()=>{
     popup_bg.style.display ='none';
 })
 
-// ================================== 2
+// ================================== 1
 for(let i of card){
     //i라는 변수가 이미지로
     i.addEventListener('click',()=>{
@@ -189,7 +189,7 @@ for(let i of card){
         console.log(i.src)
         console.log(popup_bg.children[0].children[0].src);
         popup_bg.children[0].children[0].src = i.src;
-        popup_bg.children[0].style.width = '500px';
+        popup_bg.children[0].style.width = '700px';
         popup_bg.children[0].style.marginTop = '100px';
     })
 }       
@@ -205,7 +205,7 @@ for(let i of sns){
         console.log(i.src)
         console.log(popup_bg.children[0].children[0].src);
         popup_bg.children[0].children[0].src = i.src;
-        popup_bg.children[0].style.width = '900px';
+        popup_bg.children[0].style.width = '950px';
         popup_bg.children[0].style.marginTop = '300px';
     })
 }       
