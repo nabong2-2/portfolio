@@ -23,10 +23,12 @@ const designSwiper = new Swiper('.web_design_wrap', {
 //카드
 const cardSwiper = new Swiper('.card', {
     // slidesPerView: 1,
-    autoplay: {delay: 5000,},
+    autoplay: {delay: 2000,},
     loop: true,
-    effect: "cards",
-    grabCursor: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
     
 })
 //배너
